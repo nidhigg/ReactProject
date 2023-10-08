@@ -45,9 +45,7 @@ class SongsList extends React.Component {
       return (
         <Grid item xs={12} sm={6}>
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-          
             <Typography variant='caption'>Songs URL in a playlist</Typography>
-            <Typography variant='h6'>{count[0]}</Typography>
             <Typography variant='h6'><TextField name="playlistId" value={this.state.playlistId} onChange={(e) => this.setState({ details: {[e.target.name]: e.target.value}})}/>
             <button onClick={()=>this.onSubmitButtonClick()}>Fetch Songs</button></Typography>
           </Box>
