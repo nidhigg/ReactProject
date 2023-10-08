@@ -38,7 +38,7 @@ class SongsList extends React.Component {
       });
   }
 
-  //Override render function
+  //Override render function written by us
   render() {
       const {count} = this.state;
 
